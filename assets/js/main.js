@@ -1,18 +1,20 @@
-mainHead = $("#header");
-subHead = $(".subHead");
+let mainHead = $("#header");
+let subHead = $(".subHead");
+let main = $("#main");
 
 
 $(window).scroll(()=>{
     let y = $(window).scrollTop();
     if(y > subHead.height()){
-        subHead.hide()
-        mainHead.addClass("fixed-top")
+        subHead.hide();
+        mainHead.addClass("fixed-top");
+        main.addClass("pt-5 mt-5");
     }else{
-        subHead.show()
-        mainHead.removeClass("fixed-top")
-        
+        subHead.show();
+        mainHead.removeClass("fixed-top");
+        main.removeClass("pt-5 mt-5");
     }
-})
+});
 
 $(document).ready(function(){
     $('.sale').slick({
