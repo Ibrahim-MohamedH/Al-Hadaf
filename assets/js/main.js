@@ -1,6 +1,6 @@
-let mainHead = $("#header");
-let subHead = $(".subHead");
-let main = $("#main");
+mainHead = $("#header");
+subHead = $(".subHead");
+main = $("#main");
 
 
 $(window).scroll(()=>{
